@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>List</title>
+    <!-- define o css da página-->
+     <style>
+        /* todo o conteúdo dentro de style é CSS */
+        ul {
+            background: #000000; /* altera a cor do fundo */
+            color:rgb(218, 74, 221); /* altera a cor da fonte */
+            border: 8px solid rgb(130, 57, 130);
+        }
+        ol {
+            background: rgb(0, 0, 0);
+            color: pink ;
+            border-bottom: 4px solid rgb(0, 0, 0);
+        }
+        ul.menu {
+            background: rgb(0, 0, 0);
+            color: oklch(71.481% 0.25697 327.84);
+            border-radius: 18px;
+            padding: 1rem; /* define o espaço interno */
+        }
+        li {
+            /* coloca os itens da lista na horizontal */
+            display: inline-block;
+            padding: 0 1rem; 
+        }
+        ul.menu li:hover {
+            background: pink;
+            color: red;
+        }
+     </style>
+</head>
+<body>
+ 
+     <h1>Melhores Personagens de Danganronpa</h1>
+
+     <ol>
+      <li>Monokuma</li>
+      <li>Makoto Naegi</li>
+      <li>Junko Enoshima</li>
+      <li>Kyoko Kirigiri</li>
+        
+     </ol>
+
+     <h2>The best characters support</h2>
+
+     <ul>
+        <li>Mondo Owada
+            <ol>
+                <li> Ultimate Biker Gang Leader </li>
+                <li> The Crazy Diamonds</li>
+                <li> The Diamond Brothers</li>
+            </ol>
+        </li>
+        <li>Byakuya Togami</li>
+        <ol>
+            <li> Ultimate Affluent Progeny</li>
+            <li> Council of Global Controllers</li>
+            <li> Aloysius Pennyworth</li>
+        </ol>
+     </ul>
+
+     <h2> Menu Info</h2>
+     
+     <ul class="menu">
+     <li>Start</li>
+     <li>Ultimates</li>
+     <li>Support contact</li>
+     <li>Retro Mode</li>
+     </ul>
+
+</body>
+</html>
