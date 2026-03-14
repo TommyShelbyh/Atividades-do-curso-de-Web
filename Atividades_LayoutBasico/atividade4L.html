@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos Superiores IF</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ccc; /* Fundo externo cinza */
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 800px;
+            background-color: #fbfbfb; /* Fundo do conteúdo */
+            min-height: 100vh;
+            padding-bottom: 50px;
+        }
+
+        /* Cabeçalho Verde */
+        .header {
+            background-color: #9af6b1;
+            padding: 30px;
+            text-align: center;
+            color: #037253;
+        }
+
+        .nav-links {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Conteúdo Principal */
+        .main {
+            padding: 20px 40px;
+            color: #4b4b4b;
+        }
+
+        h1 { color: #037253; margin-bottom: 20px; }
+        h3 { color: #708090; margin-top: 30px; }
+
+        p { text-align: justify; line-height: 1.4; font-size: 0.95em; }
+
+        /* Lista de Aptidões */
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; font-size: 0.9em; }
+
+        /* Colunas de Disciplinas usando Flexbox */
+        .disciplinas-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .semestre {
+            width: 48%;
+        }
+
+        .semestre h4 {
+            color: #4b4b4b;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            display: block;
+            border: 1px solid #708090;
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: white;
+            font-size: 0.85em;
+        }
+
+        /* Destaque para Desenvolvimento Web */
+        .destaque {
+            background-color: #9af6b1;
+            border-color: #037253;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Conheça os cursos superiores IF</h2>
+            <div class="nav-links">curso | disciplinas | ifpr</div>
+        </div>
+
+        <div class="main">
+            <h1>TADS</h1>
+            <p>A modalidade tecnólogo é um curso superior, reconhecido pelo MEC que habilita o profissional a atuar em diversos nichos de mercado. As disciplinas do curso fornecem o embasamento para que o aluno adquira conhecimento técnico e desenvolva autonomia para atuar nos diversos setores da área de tecnologia da informação.</p>
+
+            <h3>Aptidões da formação</h3>
+            <ul>
+                <li>Analisar, projetar, documentar, especificar, testar, implantar e manter sistemas computacionais de informação;</li>
+                <li>Desenvolver sistemas Web, dispositivos móveis, ferramentas computacionais e metodologias de projetos na produção de sistemas;</li>
+                <li>Empreender seu próprio negócio;</li>
+                <li>Atuar como analista/programador de software;</li>
+                <li>Atuar na área acadêmica.</li>
+            </ul>
+
+            <h3>Disciplinas do curso</h3>
+
+            <div class="disciplinas-container">
+                <div class="semestre">
+                    <h4>1º semestre</h4>
+                    <span class="card">Lógica de programação</span>
+                    <span class="card">Introdução a computação</span>
+                    <span class="card destaque">Desenvolvimento Web I</span>
+                    <span class="card">Matemática Aplicada</span>
+                    <span class="card">Inglês técnico</span>
+                </div>
+
+                <div class="semestre">
+                    <h4>2º semestre</h4>
+                    <span class="card">Banco de Dados I</span>
+                    <span class="card">Estrutura de Dados</span>
+                    <span class="card">Sistemas Operacionais</span>
+                    <span class="card">Orientação a Objetos</span>
+                    <span class="card destaque">Desenvolvimento Web II</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
