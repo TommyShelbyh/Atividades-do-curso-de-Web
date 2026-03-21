@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridy</title>
+<head>
+    <style>
+        .grid-table {
+            display: grid;
+            
+            grid-template-columns: 150px 150px; 
+            width: max-content;
+            border: 1px solid #000;
+            font-family: serif;
+        }
+
+        .header {
+            background-color: #6E6E6E;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .cell-modelo {
+            background-color: #CCFFFF;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .cell-consumo {
+            background-color: #98FF98;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-table">
+        <div class="header">Modelo</div>
+        <div class="header">Consumo</div>
+
+        <div class="cell-modelo">Clio</div>
+        <div class="cell-consumo">15,8 km/l</div>
+
+        <div class="cell-modelo">Palio Fire</div>
+        <div class="cell-consumo">15,4 km/l</div>
+
+        <div class="cell-modelo">Novo Uno</div>
+        <div class="cell-consumo">15,2 km/l</div>
+
+        <div class="cell-modelo">Up</div>
+        <div class="cell-consumo">14,3 km/l</div>
+    </div>
+
+</body>
+</html>

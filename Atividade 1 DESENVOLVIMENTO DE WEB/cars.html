@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            font-family: serif;
+            border: 1px solid #000;
+        }
+
+        th {
+            background-color: #6E6E6E;
+            color: white;
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            /* Centraliza o conteúdo verticalmente */
+            vertical-align: middle; 
+        }
+
+        .img-carro {
+            width: 120px; /* Ajuste o tamanho conforme necessário */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .texto-modelo {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Modelo</th>
+                <th>Consumo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="cliobah.jpeg" alt="Clio" class="img-carro"></td>
+                <td class="texto-modelo">Clio</td>
+                <td>15,8 km/l</td>
+            </tr>
+            <tr>
+                <td><img src="palio.jpeg" alt="Palio Fire" class="img-carro"></td>
+                <td class="texto-modelo">Palio Fire</td>
+                <td>15,4 km/l</td>
+            </tr>
+            <tr>
+                <td><img src="novouno.jpeg" alt="Novo Uno" class="img-carro"></td>
+                <td class="texto-modelo">Novo Uno</td>
+                <td>15,2 km/l</td>
+            </tr>
+            <tr>
+                <td><img src="volksUP.jpeg" alt="Up" class="img-carro"></td>
+                <td class="texto-modelo">Up</td>
+                <td>14,3 km/l</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
