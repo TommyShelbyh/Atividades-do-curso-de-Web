@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Box 2</title>
+    <style>
+       
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .grid-container {
+            display: grid;
+           
+            grid-template-columns: repeat(3, auto);
+            
+            gap: 15px; 
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+        }
+
+       
+        .forma {
+            width: 150px;  
+            height: 150px;
+            border: 2px solid #555; 
+            box-sizing: border-box; 
+            transition: transform 0.2s; 
+        }
+
+        
+        .forma:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .circulo {
+            border-radius: 50%;
+        }
+        .amarelo {
+            background-color: #fdfd96; 
+        }
+
+        .verde {
+            background-color: #a8f7a8;
+        }
+
+        .salmao {
+            background-color: #ffb3ba; 
+        }
+
+        .branco {
+            background-color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="forma circulo amarelo"></div>
+        <div class="forma branco"></div>
+        <div class="forma verde"></div>
+
+        <div class="forma salmao"></div>
+        <div class="forma circulo verde"></div>
+        <div class="forma salmao"></div>
+
+        <div class="forma verde"></div>
+        <div class="forma salmao"></div>
+        <div class="forma circulo amarelo"></div>
+    </div>
+
+</body>
+</html>

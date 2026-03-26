@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid-box3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 120px);
+            gap: 15px;
+        }
+
+        .forma {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #777; 
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+        .circulo {
+            border-radius: 50%;
+        }
+        .borda-grossa {
+            border: 20px solid #72bb72; 
+        }
+        .amarelo { background-color: #ffff6b; }
+        .verde-claro { background-color: #adfbad; }
+        .salmao { background-color: #ffc1a9; }
+        .transparente { background-color: transparent; border: none; } 
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="forma circulo amarelo"></div>
+        <div class="forma borda-grossa"></div>
+        <div class="forma verde-claro"></div>
+        <div class="forma"></div> <div class="forma transparente"></div> <div class="forma amarelo"></div>
+        <div class="forma circulo verde-claro"></div>
+        <div class="forma borda-grossa"></div>
+        <div class="forma transparente"></div> <div class="forma salmao"></div>
+
+        <div class="forma verde-claro"></div>
+        <div class="forma"></div> <div class="forma circulo"></div> <div class="forma borda-grossa"></div>
+        <div class="forma transparente"></div> </div>
+
+</body>
+</html>

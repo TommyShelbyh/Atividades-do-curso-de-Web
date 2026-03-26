@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-1Box</title>
+    <style>
+     
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+       
+        .container {
+            display: grid;
+          
+            grid-template-columns: repeat(3, 150px);
+           
+            grid-template-rows: repeat(3, 150px);
+            
+            gap: 10px; 
+        }
+
+      
+        .caixa {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #5a5a5a; 
+            box-sizing: border-box;   
+            background-color: #ffffff; 
+        }
+
+        
+        .amarelo { background-color: #ffff6b; }
+        .verde   { background-color: #adfbad; }
+        .salmao  { background-color: #ffc1a9; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="caixa amarelo"></div>
+        <div class="caixa"></div>
+        <div class="caixa verde"></div>
+
+        <div class="caixa amarelo"></div>
+        <div class="caixa verde"></div>
+        <div class="caixa salmao"></div>
+
+        <div class="caixa verde"></div>
+        <div class="caixa"></div>
+        <div class="caixa"></div>
+    </div>
+
+</body>
+</html>

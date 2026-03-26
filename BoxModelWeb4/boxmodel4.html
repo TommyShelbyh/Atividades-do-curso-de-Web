@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Grid-Box4</title>
+
+<style>
+  body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 20px;
+    position: relative;
+  }
+
+
+  .highlight {
+    position: absolute;
+    left: 113px;
+    top: -10px;
+    width: 100px;
+    height: 340px;
+    background: #ddcaf8;
+    z-index: 0;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .yellow {
+    background: #f1ef6b;
+  }
+
+  .green {
+    background: #8be0a1;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="highlight"></div>
+
+  <div class="circle yellow"></div>
+  <div class="circle green"></div>
+  <div class="circle yellow"></div>
+
+  <div class="circle yellow"></div>
+  <div class="circle green"></div>
+  <div class="circle green"></div>
+
+  <div class="circle green"></div>
+  <div class="circle green"></div>
+  <div class="circle yellow"></div>
+</div>
+
+</body>
+</html>
